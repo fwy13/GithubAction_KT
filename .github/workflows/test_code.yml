@@ -1,9 +1,8 @@
-name: Node.js CI
+name: Build React
 
 on:
-  push:
-    branches: [ "main" ]
-
+  issue_comment:
+    types: [created]
 jobs:
   build-and-test:
     runs-on: ubuntu-latest

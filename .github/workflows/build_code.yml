@@ -1,9 +1,8 @@
-name: Build React
+name: Node.js CI
 
 on:
-    issue_comment:
-        types:
-          - created
+  push:
+    branches: [ "main" ]
 
 jobs:
     build-react:
