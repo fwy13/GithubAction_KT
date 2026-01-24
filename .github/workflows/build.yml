@@ -1,0 +1,27 @@
+name: Build React
+
+on:
+    pull_request:
+        branches: ["main"]
+
+jobs:
+    build-react:
+        runs-on: windows-latest
+        # đi vào thư mục chứa code react để build
+        defaults:
+            run:
+                working-directory: ./Project-Test-GithubAction
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20"
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Build
+              run: npm build
