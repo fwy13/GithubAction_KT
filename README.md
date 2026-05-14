@@ -1,6 +1,6 @@
 # Tổng quan GitHub Actions: "Trợ lý ảo" miễn phí cho quy trình CI/CD
 
-
+...
 ## 1. GitHub Actions là gì?
 
 GitHub Actions là một nền tảng **CI/CD (Continuous Integration/Continuous Deployment)** được tích hợp sẵn trong GitHub.
